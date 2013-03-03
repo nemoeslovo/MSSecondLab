@@ -7,12 +7,15 @@
 //
 
 #import "SLAppDelegate.h"
+#import "SLAutomat.h"
 
-@implementation SLAppDelegate
+@implementation SLAppDelegate {
+    SLAutomat *automat;
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    automat = [[SLAutomat alloc] init];
 }
 
 @end

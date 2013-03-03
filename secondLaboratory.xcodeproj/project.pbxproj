@@ -13,6 +13,7 @@
 		8B5D69CB16E326740038AE96 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8B5D69C916E326740038AE96 /* Credits.rtf */; };
 		8B5D69CE16E326740038AE96 /* SLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5D69CD16E326740038AE96 /* SLAppDelegate.m */; };
 		8B5D69D116E326740038AE96 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B5D69CF16E326740038AE96 /* MainMenu.xib */; };
+		9471387A8B66045A77AE71A5 /* SLAutomat.m in Sources */ = {isa = PBXBuildFile; fileRef = 947139A247A44F26F17C19CB /* SLAutomat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		8B5D69CC16E326740038AE96 /* SLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLAppDelegate.h; sourceTree = "<group>"; };
 		8B5D69CD16E326740038AE96 /* SLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLAppDelegate.m; sourceTree = "<group>"; };
 		8B5D69D016E326740038AE96 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		947139A247A44F26F17C19CB /* SLAutomat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLAutomat.m; sourceTree = "<group>"; };
+		947139E055C6D384715C087E /* SLAutomat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLAutomat.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				8B5D69CD16E326740038AE96 /* SLAppDelegate.m */,
 				8B5D69CF16E326740038AE96 /* MainMenu.xib */,
 				8B5D69C116E326740038AE96 /* Supporting Files */,
+				947139A247A44F26F17C19CB /* SLAutomat.m */,
+				947139E055C6D384715C087E /* SLAutomat.h */,
 			);
 			path = secondLaboratory;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 			files = (
 				8B5D69C716E326740038AE96 /* main.m in Sources */,
 				8B5D69CE16E326740038AE96 /* SLAppDelegate.m in Sources */,
+				9471387A8B66045A77AE71A5 /* SLAutomat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
