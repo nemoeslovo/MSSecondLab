@@ -38,13 +38,13 @@ static const NSInteger _outputTable[3][4] = {
 }
 
 - (void)setState:(slState)_state {
-    NSLog(@"currentState changed from %d to %d", self.currentState + 1, _state + 1);
+    NSLog(@"currentState changed from %d to %d", self.currentState, _state);
     self.currentState = _state;
 }
 
 - (NSInteger)getOutputByInput:(NSInteger)_input {
-    NSInteger output   = _outputTable[_input][self.currentState] + 1;
-    NSInteger newState = _transitionTable[_input][self.currentState] + 1;
+    NSInteger output   = _outputTable[_input][self.currentState];
+    NSInteger newState = _transitionTable[_input][self.currentState];
     NSLog(@"for input %d, output is %d", _input, output);
     [self setState:newState];
     return output;

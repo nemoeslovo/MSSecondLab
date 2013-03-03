@@ -31,8 +31,8 @@
 }
 
 - (void)changeLabelsAfterInput:(NSInteger)input {
-    [[self outputLabel] setIntegerValue:[automat getOutputByInput:input]];
-    [[self currentState] setIntegerValue:[automat currentState] ];
+    [[self outputLabel] setIntegerValue:[automat getOutputByInput:input] + 1];
+    [[self currentState] setIntegerValue:[automat currentState] + 1 ];
 }
 
 @end

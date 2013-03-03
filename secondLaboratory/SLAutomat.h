@@ -16,7 +16,7 @@ typedef enum state {
 } slState;
 
 typedef enum output {
-    slY1
+      slY1
     , slY2
 } slOutput;
 
