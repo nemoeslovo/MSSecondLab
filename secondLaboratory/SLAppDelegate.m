@@ -16,6 +16,11 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     automat = [[SLAutomat alloc] init];
+    for (int i = 0; i < 20; i++) {
+
+        NSInteger input  = arc4random_uniform(3);
+        NSInteger output = [automat getAutomatStateByInput:input];
+    }
 }
 
 @end
