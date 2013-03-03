@@ -54,7 +54,7 @@ static const NSInteger _outputTable[3][4] = {
     currentState = _state;
 }
 
-- (NSInteger)getAutomatStateByInput:(NSInteger)_input {
+- (NSInteger)getOutputByInput:(NSInteger)_input {
     NSInteger output   = _outputTable[_input][currentState];
     NSInteger newState = _transitionTable[_input][currentState];
     NSLog(@"for input %d, output is %d", _input + 1, output + 1);

@@ -9,5 +9,5 @@
 
 
 @interface SLAutomat : NSObject
-- (NSInteger)getAutomatStateByInput:(NSInteger)_input;
+- (NSInteger)getOutputByInput:(NSInteger)_input;
 @end
