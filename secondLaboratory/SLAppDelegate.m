@@ -16,11 +16,23 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     automat = [[SLAutomat alloc] init];
-    for (int i = 0; i < 20; i++) {
+}
 
-        NSInteger input  = arc4random_uniform(3);
-        NSInteger output = [automat getOutputByInput:input];
-    }
+- (IBAction)onX1Click:(id)sender {
+    [self changeLabelsAfterInput:0];
+}
+
+- (IBAction)onX2Click:(id)sender {
+    [self changeLabelsAfterInput:1];
+}
+
+- (IBAction)onX3Click:(id)sender {
+    [self changeLabelsAfterInput:2];
+}
+
+- (void)changeLabelsAfterInput:(NSInteger)input {
+    [[self outputLabel] setIntegerValue:[automat getOutputByInput:input]];
+    [[self currentState] setIntegerValue:[automat currentState] ];
 }
 
 @end
